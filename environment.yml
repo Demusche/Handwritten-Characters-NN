@@ -1,0 +1,25 @@
+name: gpu_env
+channels:
+  - pytorch          # Official PyTorch channel
+  - conda-forge      # Community-driven channel for the latest packages
+  - defaults         # Default Conda channel
+dependencies:
+  - python=3.10                      # Latest Python version
+  - numpy                            # Numerical computing
+  - pandas                           # Data manipulation and analysis
+  - matplotlib                       # Plotting and visualization
+  - scikit-learn                     # Machine learning utilities
+  - jupyterlab                       # Interactive development environment
+  - pytorch                          # PyTorch deep learning framework
+  - torchvision                      # PyTorch package for computer vision
+  - torchaudio                       # PyTorch package for audio processing
+  - cudatoolkit                      # CUDA Toolkit for GPU acceleration
+  - cudnn                            # NVIDIA CUDA Deep Neural Network library
+  - kagglehub                        # Kaggle API for downloading datasets
+  - pip                              # Python package installer
+  - pip:
+      - tensorflow                    # Install TensorFlow via pip
+      - tensorflow-addons             # Additional functionalities for TensorFlow
+      - tensorflow-datasets           # Datasets for TensorFlow models
+      - tensorflow-hub                # Pre-trained models for TensorFlow
+      - tensorflow-probability        # Probabilistic layers for TensorFlow
